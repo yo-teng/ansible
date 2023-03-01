@@ -1,0 +1,14 @@
+---
+## Setting Instance ##
+image: centos-7-v20221102
+image_project: centos-cloud
+label:
+  dept: dept
+  env: dev
+  product: product
+subnet: projects/$PROJECT-ID/regions/asia-east1/subnetworks/$SUBNETWORK_NAME
+tags:
+  - $NETWORK_TAG
+machine_type: n2-standard-4
+boot_disk_size: 100
+boot_disk_type: pd-standard
